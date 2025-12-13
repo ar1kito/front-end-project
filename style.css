@@ -1,0 +1,166 @@
+
+/* #region main  */
+.main{
+    width: 100%;
+    min-width: 600px;
+}
+.tavi{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background-color: rgb(251, 247, 236);
+}
+.tavi h2{
+    font-size: 50px;
+    letter-spacing: -0.03em;
+}
+.tavi p{
+    font-size: 19px;
+    color: rgb(73, 63, 38);
+}
+.pictures{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.lft, .rght{
+    height: 750px;
+    flex: 1 1 350px;
+    background-position: center;
+    background-size: cover;
+}
+.abs{
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abs a{
+    background-color: #f5f0e8;
+    color: rgb(68, 56, 4);
+    text-align: center;
+    padding: 20px 70px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.abs a:hover{
+    background-color: rgb(68, 56, 4);
+    color: rgb(254, 244, 216);
+}
+.lft{
+
+    background-image: url("/pictures/tree.avif");
+
+}
+.rght{
+    background-image: url("/pictures/pen.png");
+}
+/* #endregion main */
+
+/* #region section1  */
+.sec1{
+    width: 100%;
+}
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 600px;
+}
+.left, .right{
+    flex: 1 1 300px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(251, 247, 236);
+}
+.text{
+    max-width: 500px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.qveda{
+    margin-top: 60%;
+    margin-bottom: 70px;
+}
+.text p{
+    font-size: 17px;
+    padding: 25px;
+    letter-spacing: 0.5px;
+    font-weight: 10;
+    line-height: 1.7;
+}
+.phh{
+    font-size: 55px !important;
+    padding-bottom: 25px;
+}
+.right{
+    min-height: 815px;
+    background-image: url("/pictures/woman.png");
+    background-position: center ;
+    background-size: cover;
+}
+/* #endregion section1  */
+
+/* #region sec4  */
+.sec4{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.marcxena{
+    width: 50%;
+    background-color: rgb(251, 247, 236);  
+    padding: 50px;
+    flex-grow: 1;
+}
+.teqsti{
+    max-width: 450px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.teqsti h2{
+    font-size: 45px;
+    color: rgb(73, 63, 38);
+    text-transform: capitalize;
+}
+.teqsti p{
+    font-size: 19px;
+    color: rgb(73, 63, 38);
+    letter-spacing: 0em;
+    text-align: start;
+}
+.marjvena{
+    width: 50%;
+    min-width: 300px;
+    background-color: rgb(235, 228, 218);
+    flex-grow: 1;
+}
+.paragh p{
+    max-width: 300px;
+    align-self: center;
+    font-size: 19px;
+}
+.paragh{
+    padding: 60px;
+}
+.carusel{
+    min-height: 500px;
+    display: flex;
+    align-items: end;
+}
+.isari1, .isari2{
+    width: 40px;
+}
+
+/* #endregion sec4 */
