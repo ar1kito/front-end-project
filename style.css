@@ -240,6 +240,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
+  .paik2{
+    display: none !important;
+  }
     .paik3{
     order: 1;
   }
@@ -307,6 +310,7 @@
   line-height: 1.7;
 }
 .marjvena {
+  width: 50%;
   flex: 1 1 300px;
   min-width: 0;
   background-color: rgb(235, 228, 218);
@@ -321,6 +325,7 @@
   padding: 60px;
 }
 .carusel {
+  width: 60%;
   min-height: 500px;
   display: flex;
   align-items: end;
