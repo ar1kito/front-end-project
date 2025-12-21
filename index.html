@@ -10,8 +10,8 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -21,32 +21,38 @@
     />
   </head>
   <body>
-
     <!-- #region header  -->
     <header>
-      <input type="checkbox"  id="blines">
-      <div class="shida">
-        <div class="zeda">
-          <div class="leek">
-            <a href="index.html">leek chenz</a>
-          </div>
-            <label for="blines">
-              <div class="burg">
-              <div class="line4"></div>
-              <div class="line4"></div>
-              <div class="line4"></div>
-               </div>
-            </label>
-          <div class="others">
-            <a href="">about</a>
-            <a href="">portfolio</a>
-            <a href="">contact</a>
-          </div>
+      <div class="header">
+        <nav>
+          <ul class="pirvel">
+            <li><a href="./index.html">leek chenz</a></li>
+          </ul>
+          <ul class="bolo">
+            <li><a href="./templates/about.html">about</a></li>
+            <li><a href="">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+        <div class="burger">
+          <input type="checkbox" id="chek" class="check" />
+          <div class="pirvl"><a href="./index.html">leek chenz</a></div>
+          <label for="chek">
+            <div class="line1"></div>
+            <div class="line1"></div>
+            <div class="line1"></div>
+          </label>
+          <nav class="nav1">
+            <ul class="sxva">
+              <li><a href="">about</a></li>
+              <li><a href="">portfolio</a></li>
+              <li><a href="">contact</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="line1"></div>
+        <div class="line"></div>
       </div>
     </header>
-
 
     <!-- #endregion header  -->
 
@@ -168,7 +174,11 @@
       </div>
       <div class="marjvena">
         <div class="carusel">
-          <div id="carouselExample" class="carousel slide crsl" data-bs-theme="dark">
+          <div
+            id="carouselExample"
+            class="carousel slide crsl"
+            data-bs-theme="dark"
+          >
             <div class="carousel-inner">
               <div class="carousel-item active paragh">
                 <p>
@@ -226,7 +236,7 @@
     <!-- #endregion sec4 -->
 
     <!-- #region contact  -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="items">
         <div class="pirveli"></div>
         <div class="meore">

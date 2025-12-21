@@ -1,0 +1,44 @@
+main{
+    width: 100%;
+    background-color: rgb(251, 247, 236);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    .right{
+        background-image: url("../pictures/hands.png");
+        width: 50%;
+        min-width: 300px;
+        min-height: 800px;
+        background-position: center;
+        background-size: cover;
+        flex-grow: 1;
+    }
+    .left{
+        width: 50%;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px;
+        gap: 30px;
+        & p{
+            font-size: 19px;
+            max-width: 400px;
+
+        }
+        .h2{
+            font-size: 55px;
+            padding-bottom: 30px;
+            max-width: 40px;
+            text-transform: capitalize;
+        }
+        .text2{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            & .h3{
+                font-size: 24px;
+            }
+        }
+    }
+}
