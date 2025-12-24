@@ -1,6 +1,6 @@
 main {
   width: 100%;
-  background-color: rgb(251, 247, 236);
+  background-color: rgb(246, 240, 223);
   display: flex;
   flex-wrap: wrap;
   padding-top: 70px;
@@ -40,4 +40,5 @@ main .left .text2 {
 }
 main .left .text2 .h3 {
   font-size: 24px;
+  padding-bottom: 15px;
 }/*# sourceMappingURL=about.css.map */

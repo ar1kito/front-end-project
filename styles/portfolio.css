@@ -1,0 +1,72 @@
+main {
+  width: 100%;
+  background-color: rgb(246, 240, 223);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+main .main-head {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main-head p {
+  font-size: 55px;
+  text-transform: capitalize;
+}
+main .main-contain {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+main .main-contain > div:hover > a > div {
+  filter: blur(2px) brightness(0.7);
+}
+main .main-contain .atext {
+  font-size: 28px;
+  line-height: 1.4em;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+main .main-contain > div {
+  width: 45%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  transition: filter 0.3s ease;
+}
+main .main-contain > div > a > div {
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+main .main-contain .img1 {
+  background-image: url("../pictures/painting.png");
+}
+main .main-contain .img2 {
+  background-image: url("../pictures/city.avif");
+}
+main .main-contain .img3 {
+  background-image: url("../pictures/water.jpeg");
+}
+main .main-contain .img4 {
+  background-image: url("../pictures/something.png");
+}
+main .main-contain .img5 {
+  background-image: url("../pictures/hands.png");
+}
+main .main-contain .img6 {
+  background-image: url("../pictures/tree.avif");
+}
+
+@media screen and (max-width: 900px) {
+  main .trail .divebi {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=portfolio.css.map */
