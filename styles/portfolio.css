@@ -9,7 +9,7 @@ main {
 }
 main .main-head {
   width: 100%;
-  min-height: 250px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,23 +34,43 @@ main .main-contain .atext {
   text-transform: capitalize;
   padding-top: 10px;
 }
+@media (max-width: 600px) {
+  main .main-contain .atext {
+    display: none;
+  }
+}
 main .main-contain > div {
   width: 45%;
-  min-height: 450px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   transition: filter 0.3s ease;
 }
+@media (max-width: 600px) {
+  main .main-contain > div {
+    width: 90%;
+  }
+}
 main .main-contain > div > a > div {
-  height: 600px;
+  height: 800px;
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 900px) {
+  main .main-contain > div > a > div {
+    height: 600px;
+  }
+}
+@media (max-width: 600px) {
+  main .main-contain > div > a > div {
+    height: 400px;
+  }
 }
 main .main-contain .img1 {
   background-image: url("../pictures/painting.png");
 }
 main .main-contain .img2 {
-  background-image: url("../pictures/city.avif");
+  background-image: url("../pictures/meorecity.jpeg");
 }
 main .main-contain .img3 {
   background-image: url("../pictures/water.jpeg");
@@ -63,10 +83,4 @@ main .main-contain .img5 {
 }
 main .main-contain .img6 {
   background-image: url("../pictures/tree.avif");
-}
-
-@media screen and (max-width: 900px) {
-  main .trail .divebi {
-    grid-template-columns: 1fr;
-  }
 }/*# sourceMappingURL=portfolio.css.map */

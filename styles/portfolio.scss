@@ -6,13 +6,13 @@ main {
   align-items: center;
   justify-content: center;
   padding-bottom: 70px;
-  .main-head{
+  .main-head {
     width: 100%;
-    min-height: 250px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    & p{
+    & p {
       font-size: 55px;
       text-transform: capitalize;
     }
@@ -23,26 +23,37 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    & > div:hover > a > div{
+    & > div:hover > a > div {
       filter: blur(2px) brightness(0.7);
-
     }
-    & .atext{
+    & .atext {
       font-size: 28px;
       line-height: 1.4em;
       text-transform: capitalize;
       padding-top: 10px;
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
-    & > div{
+    & > div {
       width: 45%;
-      min-height: 450px;
+      min-width: 280px;
       display: flex;
       flex-direction: column;
       transition: filter 0.3s ease;
-      & > a > div{
-        height: 600px;
+      @media (max-width: 600px){
+        width: 90%;
+      }
+      & > a > div {
+        height: 800px;
         background-position: center;
         background-size: cover;
+        @media (max-width: 900px){
+          height: 600px;
+        }
+        @media (max-width: 600px){
+          height: 400px;
+        }
       }
     }
 
@@ -50,7 +61,7 @@ main {
       background-image: url("../pictures/painting.png");
     }
     & .img2 {
-      background-image: url("../pictures/city.avif");
+      background-image: url("../pictures/meorecity.jpeg");
     }
     & .img3 {
       background-image: url("../pictures/water.jpeg");
@@ -67,12 +78,3 @@ main {
   }
 }
 
-@media screen and (max-width: 900px) {
-  main {
-    .trail {
-      .divebi {
-        grid-template-columns: 1fr;
-      }
-    }
-  }
-}
