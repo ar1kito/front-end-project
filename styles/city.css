@@ -1,0 +1,142 @@
+main {
+  width: 100%;
+  height: auto;
+  background-color: rgb(246, 240, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+main .content {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .content .first {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .content .first .pic {
+  width: 100%;
+  height: 800px;
+  background-image: url("../pictures/meorecity.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 800px) {
+  main .content .first .pic {
+    height: 250px;
+  }
+}
+main .content .first .text {
+  width: 100%;
+  height: 250px;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 700px) {
+  main .content .first .text {
+    height: 350px;
+  }
+}
+main .content .first .text .left {
+  width: 50%;
+  min-width: 250px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+main .content .first .text .left p {
+  font-size: 55px;
+  color: rgb(92, 60, 8);
+}
+@media screen and (max-width: 500px) {
+  main .content .first .text .left {
+    width: 100%;
+  }
+  main .content .first .text .left p {
+    font-size: 35px;
+    color: rgb(203, 176, 131);
+  }
+}
+main .content .first .text .right {
+  width: 50%;
+  min-width: 250px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+main .content .first .text .right p {
+  max-width: 500px;
+}
+@media screen and (max-width: 500px) {
+  main .content .first .text .right {
+    width: 100%;
+  }
+}
+main .content .second {
+  width: 100%;
+}
+main .content .second .pics {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+main .content .second .pics div > a {
+  display: block;
+}
+main .content .second .pics div {
+  width: 49%;
+  height: 450px;
+}
+@media screen and (max-width: 1050px) {
+  main .content .second .pics div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .content .second .pics div {
+    height: 250px;
+  }
+}
+main .content .second .pics div > a > div {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-grow: 1;
+  transition: filter 0.3s ease;
+}
+main .content .second .pics div p {
+  text-transform: capitalize;
+}
+main .content .second .pics div > a > div:hover {
+  filter: blur(1px) brightness(0.7);
+}
+main .content .second .pics .alink {
+  padding-top: 30px;
+  padding-left: 5px;
+}
+main .content .second .pics .alink1 {
+  padding-top: 30px;
+  padding-right: 5px;
+  text-align: end;
+}
+main .content .second .pics .div1 {
+  background-image: url("../pictures/meorecity.jpeg");
+}
+main .content .second .pics .div2 {
+  background-image: url("../pictures/darksmh.jpeg");
+}
+main .content .second .pics .div3 {
+  background-image: url("../pictures/cross.jpeg");
+}
+main .content .second .pics .div4 {
+  background-image: url("../pictures/colors.jpeg");
+}/*# sourceMappingURL=city.css.map */

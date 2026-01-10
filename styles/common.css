@@ -4,8 +4,24 @@
   box-sizing: border-box;
   list-style: none;
 }
+@font-face{
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face{
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   overflow-x: hidden;
+  font-family: "montserrat",arial, sans-serif;
+  letter-spacing: 1px;
 }
 a {
   all: unset;
@@ -14,6 +30,8 @@ a {
 /* #region header  */
 header{
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   min-height: 70px;
   background-color: rgb(246, 240, 223);
@@ -136,6 +154,9 @@ ul{
   grid-template-rows: repeat(5, 1fr);
   gap: 8px;
   padding: 40px;
+}
+footer p, a{
+  text-transform: capitalize;
 }
 .item1 {
   grid-column: span 3 / span 3;
