@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  .zeda {
+    width: 100%;
+    min-height: 90vh;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../pictures/fire.avif");
+    display: flex;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    .arrdown {
+      padding-bottom: 80px;
+    }
+    .arrdown i {
+      color: rgb(255, 255, 255);
+      font-size: 52px;
+      padding-right: 10px;
+    }
+    .container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      max-width: 340px;
+      width: 100%;
+      display: flex;
+      .text {
+        width: 160px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        p {
+          color: white;
+          font-size: 55px;
+          text-transform: uppercase;
+          font-weight: 600;
+          text-align: end;
+          padding-right: 10px;
+        }
+      }
+      .line {
+        width: 5px;
+        height: 300px;
+        background-color: white;
+      }
+      .logo {
+        position: relative;
+        width: 160px;
+        height: 160px;
+      }
+
+      .logo img {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        animation: swap 3s infinite;
+      }
+
+      .logo img:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .logo img:nth-child(2) {
+        animation-delay: 1s;
+      }
+      .logo img:nth-child(3) {
+        animation-delay: 2s;
+      }
+
+      @keyframes swap {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        30% {
+          opacity: 1;
+        }
+        40% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .qveda {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    @media screen and (max-width: 768px) {
+      & {
+        flex-direction: column;
+        padding: 40px 20px;
+      }
+      .left,
+      .right {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+      }
+      .left .cont {
+        max-width: 100%;
+      }
+      .right .plain {
+        max-width: 100%;
+      }
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      padding-right: 20px;
+      width: 50%;
+      min-width: 300px;
+      flex-grow: 1;
+      padding-bottom: 20px;
+      .cont {
+        max-width: 450px;
+        width: 100%;
+        & > p {
+          font-size: 40px;
+          font-weight: 800;
+          text-align: end;
+          padding-bottom: 20px;
+          @media screen and (max-width: 600px) {
+            font-size: 25px;
+          }
+        }
+        .div {
+          display: flex;
+          justify-content: space-around;
+          .line {
+            height: 50px;
+            width: 3px;
+            background-color: black;
+          }
+          & p {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      min-width: 300px;
+      display: flex;
+      flex-grow: 1;
+      padding-left: 20px;
+      .plain {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        & p {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+// pirveli
+section {
+  width: 100%;
+  background-image: url("../../pictures/beard.avif");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .text {
+    width: 100%;
+    .art {
+      width: 100%;
+      display: flex;
+      height: 250px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 30px;
+      & p {
+        color: white;
+        text-transform: uppercase;
+        font-size: 70px;
+        padding-top: 30px;
+      }
+    }
+    .divs {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      @media screen and (max-width: 600px) {
+        & {
+          flex-direction: column;
+        }
+        & .div1,
+        .div2,
+        .div3 {
+          width: 100%;
+          padding: 20px;
+        }
+        .div {
+          display: none;
+        }
+      }
+      .same {
+        font-size: 40px;
+      }
+      .div1 p,
+      .div2 p,
+      .div3 p {
+        max-width: 500px;
+        width: 100%;
+        line-height: 1.6;
+      }
+      .div2 {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: end;
+      }
+
+      & > div {
+        width: 50%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        & p {
+          color: white;
+        }
+      }
+    }
+  }
+}
+// meore
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .zeda {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    .satauri {
+      width: 100%;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .pic {
+        width: 200px;
+        height: 170px;
+        background-image: url("../../pictures/glasse.avif");
+        background-position: center;
+        background-size: cover;
+      }
+      p {
+        font-size: 70px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+    .pics {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+      .shida {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        & > div {
+          width: 33%;
+          min-width: 200px;
+          min-height: 450px;
+          height: 100%;
+          background-position: center;
+          background-size: cover;
+          display: flex;
+          flex-grow: 1;
+        }
+        .pic1 {
+          background-image: url("../../pictures/man.avif");
+        }
+        .pic2 {
+          background-image: url("../../pictures/woman.avif");
+        }
+        .pic3 {
+          background-image: url("../../pictures/back.avif");
+        }
+        .pic4 {
+          background-image: url("../../pictures/arm.avif");
+        }
+        .pic5 {
+          background-image: url("../../pictures/gauy.avif");
+        }
+        .pic6 {
+          background-image: url("../../pictures/back2.avif");
+        }
+        .pic7 {
+          background-image: url("../../pictures/couple.avif");
+        }
+        .pic8 {
+          background-image: url("../../pictures/smh.avif");
+        }
+        .pic9 {
+          background-image: url("../../pictures/arm2.avif");
+        }
+      }
+    }
+  }
+}
