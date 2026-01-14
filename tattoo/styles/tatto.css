@@ -181,7 +181,7 @@ main .qveda .right .plain p {
   font-size: 19px;
 }
 
-section {
+.sec1 {
   width: 100%;
   background-image: url("../../pictures/beard.avif");
   background-position: center;
@@ -191,10 +191,10 @@ section {
   flex-direction: column;
   flex-wrap: wrap;
 }
-section .text {
+.sec1 .text {
   width: 100%;
 }
-section .text .art {
+.sec1 .text .art {
   width: 100%;
   display: flex;
   height: 250px;
@@ -203,62 +203,70 @@ section .text .art {
   justify-content: center;
   padding-bottom: 30px;
 }
-section .text .art p {
+.sec1 .text .art p {
   color: white;
   text-transform: uppercase;
   font-size: 70px;
   padding-top: 30px;
 }
-section .text .divs {
+.sec1 .text .divs {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 600px) {
-  section .text .divs {
+  .sec1 .text .divs {
     flex-direction: column;
   }
-  section .text .divs .div1,
-  section .text .divs .div2,
-  section .text .divs .div3 {
+  .sec1 .text .divs .div1,
+  .sec1 .text .divs .div2,
+  .sec1 .text .divs .div3 {
     width: 100%;
     padding: 20px;
   }
-  section .text .divs .div {
+  .sec1 .text .divs .div {
     display: none;
   }
 }
-section .text .divs .same {
+.sec1 .text .divs .same {
   font-size: 40px;
 }
-section .text .divs .div1 p,
-section .text .divs .div2 p,
-section .text .divs .div3 p {
+.sec1 .text .divs .div1 p,
+.sec1 .text .divs .div2 p,
+.sec1 .text .divs .div3 p {
   max-width: 500px;
   width: 100%;
   line-height: 1.6;
 }
-section .text .divs .div2 {
+.sec1 .text .divs .div2 {
   display: flex;
   flex-direction: column;
   align-items: end;
   text-align: end;
 }
-section .text .divs > div {
+.sec1 .text .divs > div {
   width: 50%;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-section .text .divs > div p {
+.sec1 .text .divs > div p {
   color: white;
 }
 
-section {
+.sec2 {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-section .zeda {
+.sec2 .qveda {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../pictures/fire.avif");
+  background-attachment: fixed;
+}
+.sec2 .zeda {
   width: 100%;
   background-color: white;
   display: flex;
@@ -267,7 +275,7 @@ section .zeda {
   justify-content: center;
   padding-bottom: 30px;
 }
-section .zeda .satauri {
+.sec2 .zeda .satauri {
   width: 100%;
   min-height: 300px;
   display: flex;
@@ -275,19 +283,19 @@ section .zeda .satauri {
   align-items: center;
   justify-content: center;
 }
-section .zeda .satauri .pic {
+.sec2 .zeda .satauri .pic {
   width: 200px;
   height: 170px;
   background-image: url("../../pictures/glasse.avif");
   background-position: center;
   background-size: cover;
 }
-section .zeda .satauri p {
+.sec2 .zeda .satauri p {
   font-size: 70px;
   text-transform: uppercase;
   font-weight: 700;
 }
-section .zeda .pics {
+.sec2 .zeda .pics {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -295,13 +303,13 @@ section .zeda .pics {
   flex-wrap: wrap;
   padding-bottom: 40px;
 }
-section .zeda .pics .shida {
+.sec2 .zeda .pics .shida {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-section .zeda .pics .shida > div {
+.sec2 .zeda .pics .shida > div {
   width: 33%;
   min-width: 200px;
   min-height: 450px;
@@ -311,30 +319,65 @@ section .zeda .pics .shida > div {
   display: flex;
   flex-grow: 1;
 }
-section .zeda .pics .shida .pic1 {
+.sec2 .zeda .pics .shida .pic1 {
   background-image: url("../../pictures/man.avif");
 }
-section .zeda .pics .shida .pic2 {
+.sec2 .zeda .pics .shida .pic2 {
   background-image: url("../../pictures/woman.avif");
 }
-section .zeda .pics .shida .pic3 {
+.sec2 .zeda .pics .shida .pic3 {
   background-image: url("../../pictures/back.avif");
 }
-section .zeda .pics .shida .pic4 {
+.sec2 .zeda .pics .shida .pic4 {
   background-image: url("../../pictures/arm.avif");
 }
-section .zeda .pics .shida .pic5 {
+.sec2 .zeda .pics .shida .pic5 {
   background-image: url("../../pictures/gauy.avif");
 }
-section .zeda .pics .shida .pic6 {
+.sec2 .zeda .pics .shida .pic6 {
   background-image: url("../../pictures/back2.avif");
 }
-section .zeda .pics .shida .pic7 {
+.sec2 .zeda .pics .shida .pic7 {
   background-image: url("../../pictures/couple.avif");
 }
-section .zeda .pics .shida .pic8 {
+.sec2 .zeda .pics .shida .pic8 {
   background-image: url("../../pictures/smh.avif");
 }
-section .zeda .pics .shida .pic9 {
+.sec2 .zeda .pics .shida .pic9 {
   background-image: url("../../pictures/arm2.avif");
+}
+
+.sec3 {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../pictures/manbr.avif");
+  background-position: center;
+  background-size: cover;
+}
+.sec3 .text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.sec3 .text p:first-child {
+  font-size: 55px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.sec3 .text p:nth-child(3), .sec3 .text p:nth-child(4) {
+  font-weight: 600;
+  font-size: 25px;
+}
+.sec3 .text p:nth-child(5) {
+  max-width: 400px;
+  width: 100%;
+  align-self: center;
+}
+.sec3 .text p {
+  color: white;
 }/*# sourceMappingURL=tatto.css.map */
