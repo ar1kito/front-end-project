@@ -6,7 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+body {
+  overflow-x: hidden;
+}
 main {
   width: 100%;
   height: auto;
@@ -258,9 +260,10 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  .qveda{
+  .qveda {
     width: 100%;
-    height: 400px;
+    min-height: 400px;
+    height: 100%;
     background-position: center;
     background-size: cover;
     background-image: url("../../pictures/fire.avif");
@@ -347,38 +350,218 @@ main {
     }
   }
 }
-// mesame 
-.sec3{
+// mesame
+.sec3 {
   width: 100%;
-  height: 700px;
+  min-height: 700px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url("../../pictures/manbr.avif");
   background-position: center;
   background-size: cover;
-  .text{
+  .text {
     width: 40%;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 20px;
-    p:first-child{
+    p:first-child {
       font-size: 55px;
       font-weight: 600;
       text-transform: uppercase;
+      @media screen and (max-width: 650px) {
+        font-size: 30px;
+      }
     }
-    p:nth-child(3), p:nth-child(4){
+    p:nth-child(3),
+    p:nth-child(4) {
       font-weight: 600;
       font-size: 25px;
     }
-    p:nth-child(5){
+    p:nth-child(5) {
       max-width: 400px;
       width: 100%;
-    align-self: center;
+      align-self: center;
     }
-    p{
+    p {
       color: white;
+    }
+  }
+}
+// contact
+.contact {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 40px;
+    .cont-text {
+      align-content: center;
+      max-width: 500px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 30px;
+      p {
+        font-size: 17px;
+      }
+      p:nth-child(2) {
+        font-size: 55px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 20px;
+        @media screen and (max-width: 650px) {
+          font-size: 30px;
+        }
+      }
+      p:nth-child(3) {
+        font-size: 25px;
+        font-weight: 600;
+        padding: 10px 0px 20px 0px;
+        text-transform: uppercase;
+        @media screen and (max-width: 650px) {
+          font-size: 20px;
+        }
+      }
+      p:nth-child(7) {
+        font-size: 25px;
+        font-weight: 600;
+        padding: 20px 0px 20px 0px;
+        @media screen and (max-width: 650px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .inputs {
+    width: 60%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+
+      .names,
+      .other {
+        flex-direction: column;
+        gap: 10px;
+        flex-grow: 1;
+      }
+      .btn {
+        justify-content: center;
+
+        button {
+          width: 100%;
+        }
+      }
+      .names .lef,
+      .names .rig,
+      .other .lef,
+      .other .rig {
+        width: 100%;
+      }
+    }
+    .iti__selected-flag::before {
+      content: "\f7a2";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      margin-right: 6px;
+    }
+    input {
+      width: 100%;
+      border: 3px black solid;
+      padding: 10px 80px;
+    }
+    input:hover {
+      background-color: rgba(128, 128, 128, 0.577);
+    }
+    label {
+      text-transform: capitalize;
+      padding: 10px 0px 10px 0px;
+    }
+    .names {
+      width: 100%;
+      display: flex;
+      gap: 5px;
+      .lef {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+      }
+      .rig {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .other {
+      width: 100%;
+      display: flex;
+      gap: 5px;
+      .lef {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+      }
+      .rig {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .msg {
+      padding: 20px 0px 20px 0px;
+      input {
+        padding: 25px 70px;
+      }
+    }
+    .btn {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      button {
+        padding: 7px 70px;
+        background-color: rgb(104, 104, 104);
+        color: white;
+        border: none;
+        text-transform: capitalize;
+        line-height: 1.9;
+      }
+      button:hover {
+        background-color: rgba(102, 102, 102, 0.511);
+      }
+    }
+  }
+  .map {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .line {
+      width: 100%;
+      height: 10px;
+      background-color: black;
+    }
+    .div {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .inputs {
+      width: 90%;
     }
   }
 }

@@ -19,6 +19,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/css/intlTelInput.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- #region header  -->
@@ -32,6 +41,7 @@
             <li><a href="./templates/about.html">about</a></li>
             <li><a href="./templates/portfolio.html">portfolio</a></li>
             <li><a href="#contact">contact</a></li>
+            <li><a href="./tattoo/tatto.html">tatto</a></li>
           </ul>
         </nav>
         <div class="burger">
@@ -49,6 +59,7 @@
               <li><a href="./templates/about.html">portfolio</a></li>
               <div class="ul-line"></div>
               <li><a href="./#contact">contact</a></li>
+              <li><a href="./tattoo/tatto.html">tatto</a></li>
               <div class="ul-line"></div>
             </ul>
           </nav>
@@ -168,11 +179,15 @@
       <div class="div-contain">
         <div class="div1">
           <a href="./templates/city.html"><div class="img1"></div></a>
-          <a href="./templates/city.html" class="atext"><p>urban tapestry</p></a>
+          <a href="./templates/city.html" class="atext"
+            ><p>urban tapestry</p></a
+          >
         </div>
         <div class="div2">
           <a href="./templates/city.html"><div class="img2"></div></a>
-          <a href="./templates/city.html" class="atext"><p>echoes in etching</p></a>
+          <a href="./templates/city.html" class="atext"
+            ><p>echoes in etching</p></a
+          >
         </div>
         <div class="div3">
           <a href="./templates/city.html"><div class="img3"></div></a>
@@ -180,15 +195,21 @@
         </div>
         <div class="div4">
           <a href="./templates/city.html"><div class="img4"></div></a>
-          <a href="./templates/city.html" class="atext"><p>threads of tradition</p></a>
+          <a href="./templates/city.html" class="atext"
+            ><p>threads of tradition</p></a
+          >
         </div>
         <div class="div5">
           <a href="./templates/city.html"><div class="img5"></div></a>
-          <a href="./templates/city.html" class="atext"><p>the garden within</p></a>
+          <a href="./templates/city.html" class="atext"
+            ><p>the garden within</p></a
+          >
         </div>
         <div class="div6">
           <a href="./templates/city.html"><div class="img6"></div></a>
-          <a href="./templates/city.html" class="atext"><p>whispers of the forest</p></a>
+          <a href="./templates/city.html" class="atext"
+            ><p>whispers of the forest</p></a
+          >
         </div>
       </div>
     </section>
@@ -270,44 +291,42 @@
 
     <!-- #region contact  -->
     <section class="contact" id="contact">
-      <div class="items">
-        <div class="pirveli"></div>
-        <div class="meore">
-          <div class="meores-container">
-            <div class="head2"><h2>contact</h2></div>
-            <div class="inputs">
+      <div class="gare-con-box">
+        <div class="surati44"></div>
+        <div class="inputebi33">
+          <div class="contacturi">
+            <p>contact</p>
+          </div>
+          <div class="inputebi34">
+            <form action="">
               <div class="names">
-                <div class="fild">
-                  <label for="fname">first name *</label>
-                  <input name="" id="fname" required />
+                <div class="lef">
+                  <label for="fn">first name *</label>
+                  <input type="text" required id="fn" />
                 </div>
-                <div class="fild">
-                  <label for="lname">last name *</label>
-                  <input name="" id="lname" required />
+                <div class="rig">
+                  <label for="ln">last name *</label>
+                  <input type="text" required id="ln" />
                 </div>
               </div>
-              <div class="info">
-                <div class="fild">
-                  <label for="email">email *</label>
-                  <input type="email" name="" id="email" required />
+              <div class="other">
+                <div class="lef">
+                  <label for="em">email *</label>
+                  <input type="email" required id="em" />
                 </div>
-                <div class="fild">
+                <div class="rig">
                   <label for="phone">phone</label>
-                  <div class="phones">
-                    <select name="" id="">
-                      <option value="+955">GE +955</option>
-                      <option value="+1">US +1</option>
-                      <option value="+44">GB +44</option>
-                    </select>
-                    <input type="tel" id="phone" />
-                  </div>
+                  <input type="tel" required id="phone" />
                 </div>
               </div>
-              <label for="mesg" class="mesg">message</label>
-              <input type="text" name="" id="mesg" />
-
-              <div class="buttn"><button>reach out</button></div>
-            </div>
+              <div class="msg77">
+                <label for="msg">type your message here...</label>
+                <input type="text" id="msg" />
+              </div>
+              <div class="btn89">
+                <button>submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -317,7 +336,9 @@
     <!-- #region footer  -->
     <footer>
       <div class="footer">
-        <div class="item1"><a href="/index.html"><p>leek chenz</p></a></div>
+        <div class="item1">
+          <a href="/index.html"><p>leek chenz</p></a>
+        </div>
         <div class="item2">
           <div>
             <p>123-456-7890</p>
@@ -329,7 +350,10 @@
             <div class="line2"></div>
           </div>
         </div>
-        <div class="item3"><p>Privacy Policy</p> <p> Accessibility Statement</p></div>
+        <div class="item3">
+          <p>Privacy Policy</p>
+          <p>Accessibility Statement</p>
+        </div>
         <div class="item4">
           <p>© 2035 by Leek Chenz. Powered and secured by Wix</p>
         </div>
@@ -342,5 +366,16 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/js/intlTelInput.min.js"></script>
+    <script>
+      const input = document.querySelector("#phone");
+
+      window.intlTelInput(input, {
+        initialCountry: "auto",
+        separateDialCode: true,
+        utilsScript:
+          "https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/js/utils.js",
+      });
+    </script>
   </body>
 </html>

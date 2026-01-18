@@ -1,4 +1,3 @@
-
 /* #region main  */
 .main {
   width: 100%;
@@ -77,7 +76,7 @@
     padding: 15px 40px;
     font-size: 14px;
   }
-  .tavi h2{
+  .tavi h2 {
     font-size: 40px;
   }
 }
@@ -293,7 +292,7 @@
 /* #endregion sec2 */
 
 /* #region sec3 */
-.sec3{
+.sec3 {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -301,70 +300,70 @@
   padding-left: 70px;
   background-color: rgb(251, 247, 236);
 }
-.div-head p{
+.div-head p {
   font-size: 55px;
   padding-top: 30px;
   padding-bottom: 70px;
   text-transform: capitalize;
 }
-.div-contain{
+.div-contain {
   width: 100%;
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
   padding-bottom: 40px;
 }
-.div-contain > div{
+.div-contain > div {
   width: 21%;
   min-width: 200px;
   min-height: 350px;
   display: flex;
   flex-direction: column;
 }
-.div-contain > div > a > div{
+.div-contain > div > a > div {
   background-position: center;
   background-size: cover;
   height: 400px;
   transition: filter 0.3s ease;
 }
-.div-contain > div:hover > a > div{
+.div-contain > div:hover > a > div {
   filter: blur(1px) brightness(0.7);
 }
-.img1{
+.img1 {
   background-image: url("../pictures/painting.png");
 }
-.img2{
-  background-image: url("../pictures/city.avif");
+.img2 {
+  background-image: url("../pictures/city3.jpeg");
 }
-.img3{
+.img3 {
   background-image: url("../pictures/water.jpeg");
 }
-.img4{
+.img4 {
   background-image: url("../pictures/something.png");
 }
-.img5{
+.img5 {
   background-image: url("../pictures/hands.png");
 }
-.img6{
+.img6 {
   background-image: url("../pictures/tree.avif");
 }
-.atext p{
+.atext p {
   font-size: 28px;
   line-height: 1.4em;
-  color: #493F26;
+  color: #493f26;
   text-transform: capitalize;
   padding: 10px 0px 30px 0px;
 }
-@media screen and (max-width: 900px){
-  .sec3{
+@media screen and (max-width: 900px) {
+  .sec3 {
     padding: 50px;
   }
-  .div-contain > div{
+  .div-contain > div {
     flex-grow: 1;
   }
 }
-@media screen and (max-width: 450px){
-  .atext{
+@media screen and (max-width: 450px) {
+  .atext {
     display: none;
   }
 }
@@ -432,7 +431,7 @@
   .isari2 {
     width: 30px;
   }
-  .teqsti h2{
+  .teqsti h2 {
     font-size: 28px;
   }
 }
@@ -440,108 +439,155 @@
 
 /* #region contact  */
 .contact {
-  max-width: 100%;
+  width: 100%;
+  background-color: #493f26;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(73, 63, 38);
 }
-.items {
-  width: 90%;
-  padding: 40px;
+.gare-con-box {
   display: flex;
+  width: 100%;
+  max-width: 1400px;
+  min-height: 700px;
   flex-wrap: wrap;
+  padding: 40px 20px;
 }
-.pirveli {
-  flex: 1 1 50%;
-  min-height: 640px;
-  background-image: url("/pictures/desk.png");
-  background-size: cover;
+.surati44 {
+  width: 50%;
+  min-width: 300px;
+  min-height: 700px;
   background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+  background-image: url("../pictures/desk.png");
 }
-.meore {
-  flex: 1 1 50%;
+.inputebi33 {
+  width: 50%;
+  min-width: 300px;
   background-color: rgb(235, 228, 218);
   display: flex;
+  flex-direction: column;
+  align-items: start;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 80px 100px;
 }
-.meores-container {
-  width: 70%;
-  min-width: 200px;
-  max-width: 820px;
-  display: flex;
-  flex-direction: column;
-  padding: 70px 50px 0px 50px;
-}
-.head2 h2 {
-  font-size: 55px;
-  color: rgb(73, 63, 38);
-  text-transform: capitalize;
-}
-@media screen and (max-width: 600px){
-  .head2 h2{
-    font-size: 28px;
-  }
-}
-.inputs {
+.inputebi34 {
   width: 100%;
-  display: flex;
-  flex-shrink: 1;
-  flex-direction: column;
-  gap: 30px;
+  max-width: 600px;
 }
-.inputs input {
+.inputebi34 form {
   width: 100%;
-  border: none;
-  border-bottom: 1px solid black;
-  background-color: transparent;
-}
-.inputs label {
-  font-size: 16px;
-  text-transform: capitalize;
 }
 .names,
-.info {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 30px;
+.other {
   width: 100%;
-  gap: 10px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-.fild {
+.lef,
+.rig {
+  flex: 1;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
-  flex: 1 1 220px;
 }
-.mesg {
-  padding-top: 30px;
-}
-.phones {
-  display: flex;
-}
-.phones select {
-  border: none;
-  background-color: transparent;
-  border-bottom: 1px solid black;
-}
-.buttn {
-  padding-top: 40px;
-  padding-bottom: 30px;
-}
-.buttn button {
+.inputebi33 input {
   width: 100%;
-  text-align: center;
-  color: white;
-  text-transform: capitalize;
-  background-color: rgb(97, 79, 35);
-  padding: 5px;
-  border-radius: 3px;
   border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
 }
-.buttn button:hover {
-  background-color: rgba(97, 79, 35, 0.74);
-  backdrop-filter: blur(30px);
+.inputebi33 label {
+  font-size: 14px;
+  padding: 10px 0px;
+  text-transform: lowercase;
 }
+.msg77 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 30px 0px;
+}
+.msg77 input {
+  min-height: 40px;
+  padding-bottom: 12px;
+}
+.contacturi {
+  width: 100%;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: start;
+}
+.contacturi p {
+  font-size: 65px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.btn89 {
+  width: 100%;
+  min-height: 30px;
+  background-color: #6b5829;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn89 button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+.btn89:hover {
+  background-color:#6b582987;);
+}
+.iti__selected-flag::before {
+  content: "\f7a2";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 6px;
+}
+@media (max-width: 1024px) {
+  .inputebi33 {
+    padding: 60px 60px;
+  }
 
+  .contacturi p {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .gare-con-box {
+    width: 95%;
+    padding: 20px 10px;
+  }
+  .surati44 {
+    height: 400px;
+    width: 100%;
+  }
+  .inputebi33 {
+    width: 100%;
+    padding: 30px 15px;
+  }
+  .inputebi34 {
+    padding: 0 10px;
+  }
+  .contacturi p {
+    font-size: 36px;
+  }
+  .lef,
+  .rig {
+    min-width: 100%;
+  }
+  .names,
+  .other {
+    gap: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+}
 /* #endregion contact   */
