@@ -447,7 +447,7 @@ main .qveda .right .plain p {
   justify-content: center;
 }
 .contact .container {
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -614,8 +614,15 @@ main .qveda .right .plain p {
   width: 100%;
   height: 300px;
   border-radius: 10px;
+  display: flex;
 }
 @media screen and (max-width: 768px) {
+  .contact .container {
+    width: 90%;
+  }
+  .contact .map {
+    width: 100%;
+  }
   .contact .inputs {
     width: 90%;
   }

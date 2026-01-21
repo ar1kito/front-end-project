@@ -93,11 +93,6 @@ section {
   align-items: center;
   padding-bottom: 200px;
 }
-@media screen and (max-wdith: 600px) {
-  section {
-    padding-bottom: 0;
-  }
-}
 section .head {
   width: 100%;
   display: flex;
@@ -108,11 +103,11 @@ section .head {
   padding: 50px 0;
 }
 section .head h1:nth-child(1) {
-  font-size: 45px;
+  font-size: clapm(20px, 3vw 45px);
   font-weight: 700;
 }
 section .head p:nth-child(2) {
-  font-size: 16px;
+  font-size: clamp(13px, 5vw, 16px);
 }
 section .mtavari-box {
   width: 100%;
@@ -228,12 +223,25 @@ section .mtavari-box .marcxena .buttons button {
   background-color: #ffffff;
 }
 section .mtavari-box .marjvena {
-  width: 30%;
+  width: 100%;
   max-width: 300px;
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   flex-grow: 1;
+}
+section .mtavari-box .marjvena h2:nth-child(1) {
+  text-align: center;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 1030px) {
+  section .mtavari-box .marjvena {
+    width: 100%;
+    max-width: 80%;
+  }
+  section .mtavari-box .marjvena h2 {
+    padding-top: 30px;
+  }
 }
 section .mtavari-box .marjvena .line {
   width: 100%;
@@ -257,6 +265,11 @@ section .mtavari-box .marjvena .servisi button {
   text-transform: capitalize;
 }
 @media (max-width: 768px) {
+  section .mtavari-box .kalendari,
+  section .mtavari-box .adgilebi {
+    width: 100%;
+    min-width: 100%;
+  }
   section .mtavari-box .teqsti {
     flex-direction: column;
     align-items: center;
@@ -283,6 +296,23 @@ section .mtavari-box .marjvena .servisi button {
   }
   section .mtavari-box .buttons button {
     flex: 1 1 45%;
+  }
+}
+@media (max-width: 992px) {
+  section .mtavari-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  section .marcxena,
+  section .marjvena {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+@media screen and (max-wdith: 600px) {
+  section {
+    padding-bottom: 0;
   }
 }
 section .calendar {
