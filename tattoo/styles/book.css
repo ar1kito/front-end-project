@@ -129,6 +129,17 @@ section .divs .div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 1px solid black;
+  position: relative;
+}
+section .divs .div .link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+section .divs .div .btns,
+section .divs .div .text a {
+  position: relative;
+  z-index: 2;
 }
 section .divs .div .right {
   padding: 20px 40px;

@@ -132,6 +132,17 @@ section {
       display: grid;
       grid-template-columns: 1fr 1fr;
       border: 1px solid black;
+      position: relative;
+      .link {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+      }
+      .btns,
+      .text a {
+        position: relative;
+        z-index: 2;
+      }
       .right {
         padding: 20px 40px;
       }
@@ -140,7 +151,7 @@ section {
         font-weight: 800;
         font-size: 21px;
         padding: 40px 20px;
-        a{
+        a {
           all: unset;
           cursor: pointer;
         }

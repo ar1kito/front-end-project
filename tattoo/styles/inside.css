@@ -108,6 +108,7 @@ section .head h1:nth-child(1) {
 }
 section .head p:nth-child(2) {
   font-size: clamp(13px, 5vw, 16px);
+  padding: 10px;
 }
 section .mtavari-box {
   width: 100%;

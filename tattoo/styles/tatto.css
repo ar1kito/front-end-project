@@ -135,7 +135,7 @@ main .qveda .left .cont > p {
   font-size: 40px;
   font-weight: 800;
   text-align: end;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 @media screen and (max-width: 600px) {
   main .qveda .left .cont > p {
@@ -506,29 +506,6 @@ main .qveda .right .plain p {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
-  .contact .inputs {
-    width: 90%;
-  }
-  .contact .inputs .names,
-  .contact .inputs .other {
-    flex-direction: column;
-    gap: 10px;
-    flex-grow: 1;
-  }
-  .contact .inputs .btn {
-    justify-content: center;
-  }
-  .contact .inputs .btn button {
-    width: 100%;
-  }
-  .contact .inputs .names .lef,
-  .contact .inputs .names .rig,
-  .contact .inputs .other .lef,
-  .contact .inputs .other .rig {
-    width: 100%;
-  }
-}
 .contact .inputs .iti__selected-flag::before {
   content: "\f7a2";
   font-family: "Font Awesome 6 Free";
@@ -616,6 +593,16 @@ main .qveda .right .plain p {
   border-radius: 10px;
   display: flex;
 }
+@media screen and (max-width: 970px) {
+  .contact {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    padding-bottom: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .contact .container {
     width: 90%;
@@ -625,5 +612,22 @@ main .qveda .right .plain p {
   }
   .contact .inputs {
     width: 90%;
+  }
+  .contact .inputs .names,
+  .contact .inputs .other {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact .inputs .btn {
+    justify-content: center;
+  }
+  .contact .inputs .btn button {
+    width: 100%;
+  }
+  .contact .inputs .names .lef,
+  .contact .inputs .names .rig,
+  .contact .inputs .other .lef,
+  .contact .inputs .other .rig {
+    width: 100%;
   }
 }/*# sourceMappingURL=tatto.css.map */

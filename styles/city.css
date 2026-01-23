@@ -52,7 +52,6 @@ main .content .first .text .left {
 }
 main .content .first .text .left p {
   font-size: 55px;
-  color: rgb(92, 60, 8);
 }
 @media screen and (max-width: 500px) {
   main .content .first .text .left {
@@ -60,7 +59,6 @@ main .content .first .text .left p {
   }
   main .content .first .text .left p {
     font-size: 35px;
-    color: rgb(203, 176, 131);
   }
 }
 main .content .first .text .right {
