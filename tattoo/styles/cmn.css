@@ -4,12 +4,27 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
+  font-family: "montserrat", arial, sans-serif;
 }
 
 .header {
@@ -170,9 +185,6 @@ body {
     display: none;
   }
   .header .both {
-    display: flex;
-  }
-  .header .nav2 {
     display: flex;
   }
 }/*# sourceMappingURL=cmn.css.map */
